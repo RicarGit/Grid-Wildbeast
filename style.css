@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 400px 1fr 300px;
+  background-color: #FAFBFC;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: span 3;
+  align-items: center;
+  padding: 30px;
+  background-color: #A269F6;
+}
+
+.logo {
+  width: 200px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  padding: 12px 10px;
+  margin-left: 30px;
+  background-color: #9868E0;
+  border-radius: 6px;
+  font-size: 20px;
+}
