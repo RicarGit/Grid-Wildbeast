@@ -13,11 +13,11 @@
 
 header {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr auto;
   grid-column: span 3;
-  align-items: center;
   padding: 30px;
-  background-color: #A269F6;
+  align-items: end;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
 }
 
 .logo {
@@ -34,6 +34,20 @@ header nav ul li {
   margin-left: 30px;
   background-color: #9868E0;
   border-radius: 6px;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+header nav ul li a {
+  display: block;
+  color: #fff;
+  padding: 10px;
+}
+
+header nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
 
 .sidenav {
   padding: 30px;
