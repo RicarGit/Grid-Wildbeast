@@ -200,3 +200,12 @@ main {
 .wolf3 {
   grid-column: span 2;
 }
+
+aside {
+  display: grid;
+  background-color: #FAFBFC;
+  padding: 30px;
+  align-content: start;
+  gap: 30px;
+}
+
