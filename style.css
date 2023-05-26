@@ -82,4 +82,121 @@ header nav ul li a:hover {
   background-color: #B07DFB;
 }
 
+main {
+  display: grid;
+  max-width: 900px;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px;
+  gap: 30px;
+}
+
+.titulo {
+  color: #B07DFB;
+}
+
+.titulo h1 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.titulo span {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.descricao {
+  grid-column: span 2;
+}
+
+.desc2 {
+  font-size: 14px;
+  line-height: 22px;
+  width: 230px;
+  color: #B07DFB;
+}
+
+.caracteristicas {
+  display: grid;
+  grid-template-columns: repeat(2, 80px);
+  gap: 30px;
+}
+
+.caracteristicas div {
+  display: grid;
+  box-shadow: 4px 4px 15px #ddd;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.numero {
+  font-size: 48px;
+  line-height: 1.45;
+  color: #B07DFB;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+.rotulo {
+  font-size: 16px;
+  line-height: 32px;
+  color: #B07DFB;
+}
+
+.citacao {
+  grid-column: span 2;
+  padding: 30px;
+  font-size: 24px;
+  line-height: 38px;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #ccc;
+}
+
+.citacao p {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 38px;
+  text-align: center;
+  color: #fff;
+}
+
+.atributos {
+  color: #fff;
+  padding: 30px;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+.atributos li {
+  padding: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+
+.atributos li+li {
+  border-top: 2px solid #B07DFB;
+}
+
+.informacoes {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.wolf1 {
+  grid-row: span 2;
+}
+
+.wolf2 {
+  align-self: end;
+}
+
+.wolf3 {
+  grid-column: span 2;
 }
