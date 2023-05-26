@@ -209,3 +209,10 @@ aside {
   gap: 30px;
 }
 
+footer {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
