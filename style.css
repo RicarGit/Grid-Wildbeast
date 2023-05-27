@@ -16,7 +16,7 @@ header {
   grid-template-columns: 1fr auto;
   grid-column: span 3;
   padding: 30px;
-  align-items: end;
+  align-items: center;
   background: linear-gradient(135deg, #8844ee, #b07dfb);
 }
 
@@ -30,10 +30,8 @@ header nav ul {
 }
 
 header nav ul li {
-  padding: 12px 10px;
   margin-left: 30px;
-  background-color: #9868E0;
-  border-radius: 6px;
+  border-radius: 5px;
   font-size: 18px;
   background-color: rgba(0, 0, 0, 0.1);
 }
