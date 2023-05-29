@@ -19,14 +19,18 @@ img {
 
 .container {
   display: grid;
-  grid-template-columns: 400px 1fr 300px;
-  background-color: #FAFBFC;
+  grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+  background-color: #fff;
+  grid-template-areas:
+    "header   header  header"
+    "sidenav  main    aside"
+    "footer   footer  footer";
 }
 
 header {
+  grid-area: header;
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-column: span 3;
   padding: 30px;
   align-items: center;
   background: linear-gradient(135deg, #8844ee, #b07dfb);
@@ -60,6 +64,7 @@ header nav ul li a:hover {
 }
 
 .sidenav {
+  grid-area: sidenav;
   padding: 30px;
   background-color: #FAFBFC;
 }
@@ -93,6 +98,7 @@ header nav ul li a:hover {
 }
 
 main {
+  grid-area: main;
   display: grid;
   max-width: 900px;
   margin: 0 auto;
@@ -212,15 +218,17 @@ main {
 }
 
 aside {
+  grid-area: aside;
   display: grid;
   background-color: #FAFBFC;
   padding: 30px;
-  align-content: start;
   gap: 30px;
+  align-content: start;
+  background-color: #FAFBFC;
 }
 
 footer {
-  grid-column: span 3;
+  grid-area: footer;
   padding: 30px;
   text-align: center;
   color: #fff;
