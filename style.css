@@ -252,16 +252,16 @@ footer {
   }
 }
 
-/* 600PX */
-@media (max-width: 600px) {
+/* 760PX */
+@media (max-width: 760px) {
   .container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "header"
-      "sidenav"
-      "main"
-      "aside"
-      "footer";
+      "header header"
+      "sidenav sidenav"
+      "main main"
+      "aside aside"
+      "footer footer";
   }
 
   header {
@@ -309,7 +309,10 @@ footer {
   .sidenav a {
     margin-bottom: 0;
   }
+}
 
+/* 600PX */
+@media (max-width: 600px) {
   main>* {
     grid-column: span 2;
   }
