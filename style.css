@@ -69,22 +69,6 @@ header nav ul li a:hover {
   background-color: #FAFBFC;
 }
 
-.sidenav ul {
-  display: grid;
-  justify-content: center;
-  gap: 30px;
-}
-
-.sidenav ul li {
-  background-color: #fff;
-  box-shadow: 4px 4px 15px #ddd;
-  border-radius: 6px;
-}
-
-.sidenav img {
-  width: 100px;
-}
-
 .sidenav a {
   display: block;
   color: #fff;
