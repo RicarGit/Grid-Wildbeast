@@ -222,3 +222,21 @@ footer {
   color: #fff;
   background: linear-gradient(135deg, #8844ee, #b07dfb);
 }
+
+/* RESPONSIVE */
+
+/* 1270PX */
+@media (max-width: 1270px) {
+  .container {
+    grid-template-areas:
+      "header   header  header"
+      "sidenav  main    main"
+      "sidenav  aside   aside"
+      "footer   footer  footer";
+  }
+
+  aside {
+    display: flex;
+  }
+}
+
