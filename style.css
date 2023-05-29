@@ -37,30 +37,32 @@ header {
 }
 
 .logo {
-  width: 200px;
+  max-width: 200px;
 }
 
 header nav ul {
   display: flex;
-  justify-content: flex-end;
+}
+
+header nav li+li {
+  margin-left: 30px;
 }
 
 header nav ul li {
-  margin-left: 30px;
   border-radius: 5px;
-  font-size: 18px;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
 header nav ul li a {
   display: block;
+  font-size: 18px;
   color: #fff;
   padding: 10px;
 }
 
 header nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 .sidenav {
@@ -71,10 +73,14 @@ header nav ul li a:hover {
 
 .sidenav a {
   display: block;
-  color: #fff;
+  max-width: 100px;
+  min-width: 60px;
   padding: 20px;
-  height: 100px;
-  border-radius: 6px;
+  margin: 0 auto 30px auto;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px #ddd;
 }
 
 .sidenav a:hover {
@@ -103,6 +109,7 @@ main {
 
 .titulo span {
   font-size: 14px;
+  line-height: 22px;
   font-style: italic;
   font-weight: 100;
 }
@@ -119,16 +126,17 @@ main {
 }
 
 .caracteristicas {
-  display: grid;
-  grid-template-columns: repeat(2, 80px);
+  display: flex;
+  align-items: start;
   gap: 30px;
 }
 
 .caracteristicas div {
   display: grid;
-  box-shadow: 4px 4px 15px #ddd;
+  width: 80px;
   text-align: center;
   border-radius: 5px;
+  box-shadow: 4px 4px 15px #ddd;
   overflow: hidden;
 }
 
@@ -148,8 +156,6 @@ main {
 .citacao {
   grid-column: span 2;
   padding: 30px;
-  font-size: 24px;
-  line-height: 38px;
   background: linear-gradient(135deg, #8844ee, #b07dfb);
   border-radius: 5px;
   box-shadow: 2px 2px 10px #ccc;
@@ -159,7 +165,6 @@ main {
   max-width: 500px;
   margin: 0 auto;
   font-size: 24px;
-  font-weight: 400;
   font-style: italic;
   line-height: 38px;
   text-align: center;
@@ -186,11 +191,11 @@ main {
 
 .informacoes {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
 }
 
 .wolf1 {
   grid-row: span 2;
+  align-self: end;
 }
 
 .wolf2 {
@@ -204,7 +209,6 @@ main {
 aside {
   grid-area: aside;
   display: grid;
-  background-color: #FAFBFC;
   padding: 30px;
   gap: 30px;
   align-content: start;
