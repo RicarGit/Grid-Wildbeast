@@ -306,3 +306,10 @@ footer {
     gap: 30px;
   }
 }
+
+/* 400PX */
+@media (max-width: 400px) {
+  aside {
+    flex-wrap: wrap;
+  }
+}
