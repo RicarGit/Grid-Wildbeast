@@ -199,6 +199,7 @@ main {
 
 .informacoes {
   display: grid;
+  gap: 30px;
 }
 
 .wolf1 {
@@ -315,10 +316,6 @@ footer {
 @media (max-width: 600px) {
   main>* {
     grid-column: span 2;
-  }
-
-  .informacoes {
-    gap: 30px;
   }
 }
 
