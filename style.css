@@ -3,6 +3,18 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  font-family: 'Vollkorn';
+}
+
+p {
+  font-size: 19px;
+  line-height: 31px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .container {
