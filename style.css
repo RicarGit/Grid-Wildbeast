@@ -220,6 +220,7 @@ main {
 aside {
   grid-area: aside;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   padding: 30px;
   gap: 30px;
   align-content: start;
@@ -246,10 +247,6 @@ footer {
       "sidenav  main    main"
       "sidenav  aside   aside"
       "footer   footer  footer";
-  }
-
-  aside {
-    display: flex;
   }
 }
 
@@ -314,14 +311,7 @@ footer {
 
 /* 600PX */
 @media (max-width: 600px) {
-  main>* {
-    grid-column: span 2;
-  }
-}
-
-/* 400PX */
-@media (max-width: 400px) {
-  aside {
-    flex-wrap: wrap;
+  main {
+    grid-template-columns: auto;
   }
 }
