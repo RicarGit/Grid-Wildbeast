@@ -123,7 +123,7 @@ main {
 }
 
 .descricao {
-  grid-column: span 2;
+  grid-column: 1 / -1;
 }
 
 .desc2 {
@@ -162,7 +162,7 @@ main {
 }
 
 .citacao {
-  grid-column: span 2;
+  grid-column: 1 / -1;
   padding: 30px;
   background: linear-gradient(135deg, #8844ee, #b07dfb);
   border-radius: 5px;
@@ -212,7 +212,7 @@ main {
 }
 
 .wolf3 {
-  grid-column: span 2;
+  grid-column: 1 / -1;
 }
 
 /* ADVERTISING */
