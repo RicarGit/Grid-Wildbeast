@@ -253,7 +253,7 @@ footer {
 /* 760PX */
 @media (max-width: 760px) {
   .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     grid-template-areas:
       "header header"
       "sidenav sidenav"
@@ -263,7 +263,7 @@ footer {
   }
 
   header {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     gap: 20px;
   }
 
@@ -283,7 +283,6 @@ footer {
   .sidenav::before {
     content: '→';
     position: absolute;
-    right: 0;
     top: 5px;
     opacity: .3;
     animation: scrollArrow .5s ease-in alternate-reverse infinite;
